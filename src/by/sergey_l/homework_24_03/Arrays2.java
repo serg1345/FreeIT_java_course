@@ -5,17 +5,12 @@ package by.sergey_l.homework_24_03;
 строку, а затем этот же массив выведите на экран тоже в строку, но в обратном
 порядке (99 97 95 93 ... 7 5 3 1).
  */
-
-
 public class Arrays2 {
     public static void main(String[] args) {
-
         int[] unevenArray = new int[50];
-
         for (int i = 0; i < unevenArray.length; i++) {
             unevenArray[i] = i * 2 + 1;
         }
-
         for (int i = 0; i < unevenArray.length; i++) {
             System.out.print(unevenArray[i] + " ");
         }
@@ -25,7 +20,6 @@ public class Arrays2 {
             System.out.print(unevenArray[i] + " ");
         }
         System.out.println();
-
 // доп задание:
 //Найти среднее арифметическое элементов с нечетными номерами.
         int countOddIndex = 0;
@@ -34,6 +28,6 @@ public class Arrays2 {
             countOddIndex++;
             sumElementsOddIndex += unevenArray[i];
         }
-        System.out.println("Среднее арифметическое элементов с нечетными индексами равно " + sumElementsOddIndex / (double)countOddIndex);
+        System.out.println("Среднее арифметическое элементов с нечетными индексами равно " + sumElementsOddIndex / (double) countOddIndex);
     }
 }

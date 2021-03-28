@@ -18,7 +18,6 @@ public class Arrays9 {
         @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
         int size;
-
         done = false;
         size = 0;
         System.out.print("Введите целое положительное четное число >> ");
@@ -34,11 +33,9 @@ public class Arrays9 {
                 System.out.print("Ваш ввод не соответствует указанным требованиям, повторите >> ");
             }
         }
-
         int[] array = new int[size];
         int sum1 = 0;
         int sum2 = 0;
-
         for (int i = 0; i < size; i++) {
             array[i] = (int) (Math.random() * 16);
             if (i < size / 2) {
@@ -47,7 +44,6 @@ public class Arrays9 {
                 sum2 += array[i];
             }
         }
-
         for (int i = 0; i < size; i++) {
             System.out.print(array[i] + " ");
         }
@@ -59,11 +55,10 @@ public class Arrays9 {
         } else {
             System.out.printf("Сумма первой половины элементов (%d) меньше суммы второй половины элементов (%d)\n", sum1, sum2);
         }
-
 //доп задание:
 //Найти наименьший элемент среди элементов с четными индексами массива
         int min = array[0];
-        for (int i = 2; i < array.length; i +=2) {
+        for (int i = 2; i < array.length; i += 2) {
             if (array[i] < min) {
                 min = array[i];
             }

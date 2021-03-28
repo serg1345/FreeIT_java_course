@@ -9,13 +9,11 @@ import java.util.Random;
 
 public class FromMetodichkaTask14 {
     public static void main(String[] args) {
-
         final int SIZE = 20;
         int[] grade = new int[SIZE];
         Random rand = new Random();
         int maxValue;
         int minValue;
-
         for (int i = 0; i < grade.length; i++) {
             grade[i] = rand.nextInt(10) + 1;
         }

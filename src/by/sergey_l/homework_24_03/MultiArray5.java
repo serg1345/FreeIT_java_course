@@ -4,7 +4,6 @@ package by.sergey_l.homework_24_03;
 Создаём квадратную матрицу, размер вводим с клавиатуры. Заполняем
 случайными числами в диапазоне от 0 до 50. И выводим на консоль(в виде
 матрицы).
-
  */
 
 import java.util.Scanner;
@@ -14,7 +13,6 @@ public class MultiArray5 {
         boolean done = false;
         Scanner sc = new Scanner(System.in);
         int size = 0;
-
         System.out.print("Введите размер матрицы >> ");
         while (!done) {
             while (sc.hasNextInt() == false) {
@@ -40,10 +38,9 @@ public class MultiArray5 {
             System.out.println();
         }
         System.out.println("********************************************");
-
         int temp = 0;
         for (int i = 1; i < array.length; i++) {
-            for (int j = 0; j < i; j++){
+            for (int j = 0; j < i; j++) {
                 temp = array[i][j];
                 array[i][j] = array[j][i];
                 array[j][i] = temp;

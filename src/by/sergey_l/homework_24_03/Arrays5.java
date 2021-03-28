@@ -9,7 +9,6 @@ package by.sergey_l.homework_24_03;
 */
 
 public class Arrays5 {
-	
 	public static void main(String[] args) {
 		final int SIZE = 5;
 		int[] array1 = new int[SIZE];
@@ -18,7 +17,6 @@ public class Arrays5 {
 		double average1;
 		int sum2 = 0;
 		double average2;
-		
 		for (int i = 0; i < SIZE; i++) {
 			array1[i] = (int) (Math.random() * 16);
 			sum1 += array1[i];
@@ -27,7 +25,6 @@ public class Arrays5 {
 		}
 		average1 =(double) sum1 / SIZE;
 		average2 =(double) sum2 / SIZE;
-		
 		for (int i = 0; i < SIZE; i++) {
 			System.out.print(array1[i] + "\t");
 		}
@@ -43,7 +40,6 @@ public class Arrays5 {
 		} else {
 			System.out.printf("Средние арифметические первого массива %.3f меньше среднего арифметического второго массива %.3f\n", average1, average2);
 		}
-
 // доп задание:
 //«Сожмите» массив, выбросив из него каждый второй элемент.
 //«Освободившиеся» места массива заполните нулями.

@@ -11,7 +11,6 @@ import java.util.Scanner;
 
 public class TicTacToe {
     public static void main(String[] args) {
-
         char[][] gameField = new char[3][3];
         boolean gameOver = false;
         int countStep = 0;
@@ -21,7 +20,6 @@ public class TicTacToe {
         char label;
         int[] step = new int[2];
         Scanner sc = new Scanner(System.in);
-
         for (int i = 0; i < gameField.length; i++) {//заполняем игровое поле
             for (int j = 0; j < gameField[i].length; j++) {
                 gameField[i][j] = '-';
@@ -118,7 +116,6 @@ public class TicTacToe {
             } else {
                 System.out.println("Недопустимый ход, клетка уже занята");
             }
-
             if (countStep == 9) { //Если закончились ходы
                 gameOver = true;
                 System.out.println("НИЧЬЯ");

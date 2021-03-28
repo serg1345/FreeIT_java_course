@@ -13,7 +13,6 @@ public class MultiArray1 {
         boolean done = false;
         Scanner sc = new Scanner(System.in);
         int size = 0;
-
         System.out.print("Введите размер матрицы >> ");
         while (!done) {
             while (sc.hasNextInt() == false) {
@@ -39,7 +38,6 @@ public class MultiArray1 {
             System.out.println();
         }
         System.out.println("********************************************");
-
         int sum = 0;
         for (int i = 0; i < size; i++) {
             if (array[i][i] % 2 == 0) {
