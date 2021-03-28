@@ -8,22 +8,18 @@ public class Task5 {
         int a = -5;
         int b = 7;
         int c = 0;
-
         int countPositive = 0;
         int countNegative = 0;
-
         if (a > 0) {
             countPositive++;
         } else if (a < 0) {
             countNegative++;
         }
-
         if (b > 0) {
             countPositive++;
         } else if (b < 0) {
             countNegative++;
         }
-
         if (c > 0) {
             countPositive++;
         } else if (c < 0) {

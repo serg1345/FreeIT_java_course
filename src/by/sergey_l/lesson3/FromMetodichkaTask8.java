@@ -1,5 +1,4 @@
 package by.sergey_l.lesson3;
-
 /*
 Имеется целое число (задать с помощью Random rand = new Random(); int x =
 rand.nextInt() ). Это число – количесво денег в рублях. Вывести это число, добавив к
@@ -9,15 +8,12 @@ rand.nextInt() ). Это число – количесво денег в руб�
 import java.util.Random;
 
 public class FromMetodichkaTask8 {
-
     public static void main(String[] args) {
         Random rand = new Random();
         int x = rand.nextInt();
-
         String s1 = " рубль";
         String s2 = " рубля";
         String s3 = " рублей";
-
         System.out.print(x);
         if (x < 0) {
             x = -x;

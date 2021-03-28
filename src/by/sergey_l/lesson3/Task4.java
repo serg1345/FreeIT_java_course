@@ -3,13 +3,11 @@ package by.sergey_l.lesson3;
 /*
 Составьте программу, вычисляющую A*B, не пользуясь операцией умножения.
  */
-
 public class Task4 {
     public static void main(String[] args) {
         int a = 5;
         int b = 6;
         int result = 0;
-
         System.out.print(a + " * " + b + " = ");
         if ((a == 0) || (b == 0)) { //оба нули
             result = 0;

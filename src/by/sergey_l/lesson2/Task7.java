@@ -5,22 +5,13 @@ package by.sergey_l.lesson2;
 В зависимости от количества программистов необходимо вывести правильно окончание.
 Например: • 2 программиста • 1 программиста • 10 программистов • и т.д.
  */
-
 public class Task7 {
-
     public static void main(String[] args) {
         int countProgrammers = 0;
-
         String s1 = " программист";
         String s2 = " программиста";
         String s3 = " программистов";
-
-//        if (countProgrammers < 0) {
-//            System.out.println("Количество программистов не может быть отрицательным");
-//            return;
-//        }
-
-        for (countProgrammers = 0; countProgrammers <= 1100; countProgrammers++) {
+        for (countProgrammers = 0; countProgrammers <= 30; countProgrammers++) {
             switch (countProgrammers % 10) {
                 case 1: {
                     if (countProgrammers % 100 == 11) {
@@ -34,7 +25,7 @@ public class Task7 {
                 case 3:
                 case 4: {
                     if ((countProgrammers % 100 == 12) || (countProgrammers % 100 == 13) ||
-                        (countProgrammers % 100 == 13) || (countProgrammers % 100 == 14)) {
+                            (countProgrammers % 100 == 13) || (countProgrammers % 100 == 14)) {
                         System.out.println(countProgrammers + s3);
                     } else {
                         System.out.println(countProgrammers + s2);

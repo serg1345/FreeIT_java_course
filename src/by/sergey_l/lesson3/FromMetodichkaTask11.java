@@ -1,5 +1,4 @@
 package by.sergey_l.lesson3;
-
 /*
 Имеется целое число, определить является ли это число простым, т.е.
 делится без остатка только на 1 и себя.
@@ -8,7 +7,6 @@ package by.sergey_l.lesson3;
 import java.util.Random;
 
 public class FromMetodichkaTask11 {
-
     public static void main(String[] args) {
         Random rand = new Random();
         int x = rand.nextInt(100) + 1;
@@ -25,5 +23,4 @@ public class FromMetodichkaTask11 {
             System.out.printf("Число %d не является простым", x);
         }
     }
-
 }
